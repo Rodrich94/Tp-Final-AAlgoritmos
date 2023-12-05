@@ -1,6 +1,7 @@
 function Sumatoria(n: nat): nat
 {   
-    if n == 0 then 0 else n + Sumatoria(n - 1)
+    if n == 0 then 0 
+    else n + Sumatoria(n - 1)
 }
 
 method SerieSumatoria(n: nat) returns (resultado: nat)
