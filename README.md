@@ -21,7 +21,8 @@ FIN MODULO
 1. MODULO doble (ENTERO n) RETORNA ENTERO
    {Pre: n >= 0}
    {Post: resultado ← n + n}
-   RETORNA n + n
+    resultado ← n + n
+   RETORNA resultado
    FIN MODULO
 
 2. MODULO triple (ENTERO n) RETORNA ENTERO
