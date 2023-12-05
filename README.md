@@ -14,6 +14,30 @@ SI n >= 0
     resultado ← (n ⋅ (n + 1))/2
 RETORNA resultado
 FIN MODULO
+
+Version 2.0:
+FUNCION Sumatoria(n: nat): nat
+    SI n == 0 ENTONCES
+        RETORNA 0
+    SINO
+        RETORNA n + Sumatoria(n - 1)
+    FIN SI
+FIN FUNCION
+
+FUNCION SerieSumatoria(n: nat) RETORNA nat
+    {Pre: n >= 0}
+    {Post: resultado ← (n ⋅ (n + 1))/2 v resultado ← -1}
+    VAR resultado := 0
+    VAR i := 0
+    REPETIR
+        SI i < n ENTONCES
+            resultado := resultado + (i + 1)
+        FIN SI
+        i := i + 1
+    HASTA i >= n
+    RETORNA resultado
+FIN FUNCION
+
 ```
 2. **Triple de un número entero**
 
