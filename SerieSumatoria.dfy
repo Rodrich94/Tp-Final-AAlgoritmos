@@ -15,4 +15,8 @@ method SerieSumatoria(n: nat) returns (resultado: nat)
             i := i + 1;
             resultado := resultado + i;
         }
+        assert i == n;
+        assert resultado == Sumatoria(n);
+        assert Sumatoria(2) == 3;
+        //assert Sumatoria(-1) >= 0;
     }
