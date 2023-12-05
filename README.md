@@ -16,7 +16,7 @@ RETORNA resultado
 FIN MODULO
 
 Version 2.0:
-FUNCION Sumatoria(n: nat): nat
+FUNCION Sumatoria(ENTERO N): ENTERO
     SI n == 0 ENTONCES
         RETORNA 0
     SINO
@@ -24,7 +24,7 @@ FUNCION Sumatoria(n: nat): nat
     FIN SI
 FIN FUNCION
 
-FUNCION SerieSumatoria(n: nat) RETORNA nat
+FUNCION SerieSumatoria(ENTERO n) RETORNA ENTERO
     {Pre: n >= 0}
     {Post: resultado ← (n ⋅ (n + 1))/2 v resultado ← -1}
     VAR resultado := 0
